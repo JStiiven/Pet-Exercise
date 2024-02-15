@@ -6,5 +6,11 @@ if (petQuesition !== "Perro" && petQuesition !== "Gato" && petQuesition !== "Ave
     let questionAge = parseInt(prompt("Qué edad tiene su mascota?"));
     if (isNaN(questionAge)) {
         alert("Por favor, ingrese una edad válida.");
+    }else {
+        getPetExerciseInfo(petQuesition, questionAge);
     }
+}
+
+function getPetExerciseInfo(pet, age) {
+
 }
