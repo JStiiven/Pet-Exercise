@@ -29,5 +29,14 @@ function getPetExerciseInfo(pet, age) {
         } else if (age >= 7) {
             alert("Los gatos viejos necesitan sesiones de juego más cortas")
         }
+    } else if (pet === "Ave") {
+        if (age <= 1) {
+            alert("Las aves jóvenes necesitan mucho espacio para volar")
+        } else if (age > 1 && age < 7) {
+            alert("Las aves necesitan jugar diariamente y un lugar para volar")
+        } else if (age >= 7) {
+            alert("Las aves mayores necesitan descansar más, pero siguen ocupando un lugar para volar")
+        }
     }
 }
+getPetExerciseInfo(petQuesition, questionAge)
