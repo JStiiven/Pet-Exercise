@@ -15,11 +15,19 @@ function getPetExerciseInfo(pet, age) {
     if (pet === "Perro") {
         if (age < 1) {
             alert("Los cachorros necesitan pequeñas y frecuentes sesiones de juego")
-        } else if (age > 1 || age < 7) {
-            alert("Los perros a esta age necesitan caminatas diarias y sesiones de juego")
+        } else if (age > 1 && age < 7) {
+            alert("Los perros a esta edad necesitan caminatas diarias y sesiones de juego")
         } else if (age >= 7) {
             alert("Los perros viejos necesitan caminatas más cortas")
         }
 
+    } else if (pet === "Gato") {
+        if (age <= 1) {
+            alert("Los gatitos necesitan frecuentes sesiones de juego")
+        } else if (age > 1 && age < 7) {
+            alert("Los gatos a esta edad necesitan jugar diariamente")
+        } else if (age >= 7) {
+            alert("Los gatos viejos necesitan sesiones de juego más cortas")
+        }
     }
 }
